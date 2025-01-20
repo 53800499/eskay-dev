@@ -70,7 +70,7 @@ const works = [
 
 export default function WorkContainer() {
   return (
-    <Container className="rounded ">
+    <Container className="rounded mx-4">
       {/* Titre de la section */}
       <TitreSection className="w-[100px] m-auto text-center">Projets</TitreSection>
 

@@ -22,7 +22,7 @@ export default function WorkElement({
   technologies
 }: Props) {
   return (
-    <div className="rounded shadow-lg grid grid-cols-1 md:grid-cols-2   my-2 bg-white dark:bg-gray-800 dark:text-white">
+    <div className="rounded mx-4 shadow-lg grid grid-cols-1 md:grid-cols-2   my-2 bg-white dark:bg-gray-800 dark:text-white">
       {/* Image Section */}
       <div className=" bg-gray-200 dark:bg-gray-200 p-5 md:rounded-l rounded-t">
 
