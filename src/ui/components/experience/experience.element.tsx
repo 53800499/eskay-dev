@@ -12,7 +12,7 @@ interface Props {
 
 export default function ExperienceElement({ nom, titre, option, date }: Props) {
   return (
-    <div className="flex flex-col md:flex-row p-6 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg gap-4 rounded md:w-[896px]">
+    <div className="flex flex-col md:flex-row p-5 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg gap-4 rounded md:w-[896px]">
       {/* Nom de l'entreprise/institution */}
       <Typography
         variant="h3"

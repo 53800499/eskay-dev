@@ -7,7 +7,7 @@ interface Prop{
 }
 export default function TitreSection({children, className}:Prop) {
   return (
-    <Typography className={clsx('bg-gray-200 dark:bg-gray-500 rounded p-2 p-auto ', className)}>
+    <Typography variant='body3' className={clsx('bg-gray-200 dark:bg-gray-500 rounded p-2 p-auto ', className)}>
       {children}
     </Typography>
   )

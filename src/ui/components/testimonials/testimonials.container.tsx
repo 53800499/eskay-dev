@@ -38,7 +38,7 @@ export default function TestimonialsContainer() {
   return (
     <Container className="text-center bg-gray-50 dark:bg-gray-600" idElement="skills">
       {/* Titre de la section */}
-      <TitreSection className="w-[200px] m-auto">Témoignages</TitreSection>
+      <TitreSection className="w-[150px] m-auto">Témoignages</TitreSection>
 
       {/* Description de la section */}
       <Typography variant="body2" className="mt-4 mb-8 text-gray-600">

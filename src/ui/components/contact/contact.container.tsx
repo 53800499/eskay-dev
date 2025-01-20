@@ -20,7 +20,7 @@ export default function ContactContainer() {
       className="text-center justify-center dark:bg-gray-600"
       idElement="contact"
     >
-      <TitreSection className="w-[250px] m-auto">Contactez-moi</TitreSection>
+      <TitreSection className="w-[150px] m-auto">Contactez-moi</TitreSection>
       <Typography variant="subTitle">
         Quelle est la suite ? N{"'"}hésitez pas à me contacter si vous
         recherchez un développeur, si vous avez une question, ou simplement si

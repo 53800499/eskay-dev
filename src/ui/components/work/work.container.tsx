@@ -72,7 +72,7 @@ export default function WorkContainer() {
   return (
     <Container className="rounded ">
       {/* Titre de la section */}
-      <TitreSection className="w-[150px] m-auto text-center">Projets</TitreSection>
+      <TitreSection className="w-[100px] m-auto text-center">Projets</TitreSection>
 
       {/* Description de la section */}
       <Typography variant="body2" className="mt-4 mb-8 text-gray-600 text-center">
@@ -91,13 +91,13 @@ export default function WorkContainer() {
                 work.technologies.map((item, index) => (
                   <TitreSection
                     key={index}
-                    className="text-sm min-w-[10px] text-gray-700 px-4 pb-2 dark:text-gray-300"
+                    className="text-2xl min-w-[10px] px-4 text-gray-700  pb-2 dark:text-gray-300"
                   >
                     {item}
                   </TitreSection>
                 ))
               ) : (
-                <TitreSection className="text-sm text-gray-500">
+                <TitreSection className="text-gray-500">
                   Technologies non spécifiées
                 </TitreSection>
               )

@@ -62,7 +62,7 @@ export default function ExperienceContainer() {
   return (
     <Container className="text-center dark:bg-gray-600" idElement="skills">
       {/* Titre de la section */}
-      <TitreSection className="w-[200px] m-auto">Expérience</TitreSection>
+      <TitreSection className="w-[150px] m-auto">Expérience</TitreSection>
 
       {/* Description de la section */}
       <Typography variant="body2" className="mt-4 mb-8 text-gray-600">

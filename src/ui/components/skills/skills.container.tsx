@@ -26,16 +26,16 @@ const skills = [
 
 export default function SkillsContainer() {
   return (
-    <Container className="text-center py-8">
+    <Container className="text-center py-4 md:py-8">
       {/* Titre de la section */}
-      <TitreSection className="w-[300px] m-auto mb-6">Mes compétences</TitreSection>
+      <TitreSection className="w-[180px] m-auto mb-6">Mes compétences</TitreSection>
 
       {/* Description */}
-      <Typography variant="body2" className="mb-8 text-gray-700 dark:text-gray-300">
+      <Typography variant="body2" className="mb-8  text-gray-700 dark:text-gray-300">
         Passionné par le développement et l{"'"}innovation, je combine expertise technique et créativité pour concevoir des solutions numériques performantes, adaptées aux besoins des utilisateurs et en phase avec les tendances technologiques.
       </Typography>
 
-      <div className="grid grid-cols-2 sm:grid-cols-7 md:grid-cols-8 gap-6 p-8 bg-white dark:bg-gray-900">
+      <div className="grid grid-cols-3 sm:grid-cols-7 md:grid-cols-8 gap-6 md:p-8 bg-white dark:bg-gray-900">
       {skills.map((skill) => (
         <div key={skill.id} className="flex flex-col items-center text-center">
           {/* Image */}
