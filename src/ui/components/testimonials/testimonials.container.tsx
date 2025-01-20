@@ -36,7 +36,7 @@ export default function TestimonialsContainer() {
   ];
 
   return (
-    <Container className="text-center bg-gray-50 dark:bg-gray-600" idElement="skills">
+    <Container className="text-center bg-gray-100 dark:bg-gray-600" idElement="skills">
       {/* Titre de la section */}
       <TitreSection className="w-[150px] m-auto">Témoignages</TitreSection>
 
@@ -46,7 +46,7 @@ export default function TestimonialsContainer() {
       </Typography>
 
       {/* Liste des témoignages */}
-      <div className=" space-x-8 flex flex-wrap justify-center ">
+      <div className="gap-8 flex flex-wrap justify-center ">
         {temoignages.length > 0 ? (
           temoignages.map((temoignage) => (
             <div key={temoignage.id} >

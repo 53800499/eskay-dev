@@ -5,10 +5,10 @@ import React from "react";
 
 export default function AboutElement() {
   return (
-    <div>
+    <div className="mx-4">
       <Typography variant="h3">
         Curieux à propos de moi ? Voilà ce qu{"'"}il en est :
-      </Typography>
+      </Typography> 
       <Typography variant="body2" className="mt-4 text-justify">
         <p>Je suis un développeur passionné et polyvalent, spécialisé dans la
         création de solutions numériques modernes, performantes et centrées sur

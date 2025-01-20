@@ -24,7 +24,7 @@ export default function WorkElement({
   return (
     <div className="rounded shadow-lg grid grid-cols-1 md:grid-cols-2   my-2 bg-white dark:bg-gray-800 dark:text-white">
       {/* Image Section */}
-      <div className=" bg-gray-50 dark:bg-gray-200 p-5 rounded-l">
+      <div className=" bg-gray-200 dark:bg-gray-200 p-5 md:rounded-l rounded-t">
 
       <div className="relative w-full h-64 md:h-full rounded overflow-hidden ">
         <Image
@@ -38,7 +38,7 @@ export default function WorkElement({
       </div>
 
       {/* Text Section */}
-      <div className="flex flex-col justify-between p-4 dark:bg-gray-600 rounded-r">
+      <div className="flex flex-col justify-between p-4 bg-gray-100 dark:bg-gray-600 md:rounded-r rounded-b">
         <div>
           <Typography
             variant="h3"

@@ -150,6 +150,15 @@ module.exports = {
       DEFAULT: "400",
       bold: "700"
     },
+    keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' }, // Position initiale et finale
+          '50%': { transform: 'translateY(-10px)' }, // Décalage vers le haut
+        },
+      },
+      animation: {
+        float: 'float 3s ease-in-out infinite', // Durée, easing et répétition infinie
+      },
     extend: {}
   },
   plugins: []

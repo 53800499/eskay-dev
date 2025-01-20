@@ -20,7 +20,7 @@ export default function TestimonialsElements({
   reseaux
 }: Props) {
   return (
-    <div className="flex flex-col items-center gap-4 w-[300px] h-[350px]  bg-gray-100 dark:bg-gray-800 p-6 rounded">
+    <div className="flex flex-col items-center gap-4 w-[300px] h-[350px]  bg-gray-200 dark:bg-gray-800 p-6 rounded">
         <div>
           <Avatar src={src} alt={alt} size="large" />
         </div>
