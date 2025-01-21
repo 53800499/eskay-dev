@@ -20,11 +20,11 @@ export default function TestimonialsElements({
   reseaux
 }: Props) {
   return (
-    <div className="flex flex-col items-center gap-4 w-[300px] h-[350px]  bg-gray-200 dark:bg-gray-800 p-6 rounded">
+    <div className="flex flex-col justify-center items-center gap-4 w-[300px] h-[350px]  bg-gray-200 dark:bg-gray-800 p-6 rounded">
         <div>
           <Avatar src={src} alt={alt} size="large" />
         </div>
-        <Typography variant="body2" className="text-start text-sm">{commentaire}</Typography>
+        <Typography variant="body2" className=" text-sm">{commentaire}</Typography>
 
       <div className="text-center">
         <Typography variant="subTitle" className="font-semibold">{nom}</Typography>

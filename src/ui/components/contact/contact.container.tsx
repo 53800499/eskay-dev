@@ -19,8 +19,9 @@ export default function ContactContainer() {
     alert("Le site est en maintenance Contactez-moi par mes identifiant situé en bas");
   }
   return (
-    <Container
-      className="text-center justify-center dark:bg-gray-600"
+    <div className="">
+      <Container
+      className="text-center justify-center"
       idElement="contact"
     >
       <TitreSection className="w-[150px] m-auto">Contactez-moi</TitreSection>
@@ -82,5 +83,6 @@ export default function ContactContainer() {
         </Button>
       </div>
     </Container>
+    </div>
   );
 }

@@ -8,7 +8,8 @@ export default function FooterContainer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Container className="space-y-11 pb-11 bg-gray-100 dark:bg-gray-600">
+    <div className="bg-gray-100 dark:bg-gray-600">
+      <Container className="space-y-11 pb-11 ">
       <div className="flex items-center justify-center gap-1">
         <Typography variant="body3" theme="gray" className="text-center">
           {`Copy @ ${currentYear} | Propulsed by `}{" "}
@@ -19,5 +20,6 @@ export default function FooterContainer() {
         </Typography>
       </div>
     </Container>
+    </div>
   );
 }

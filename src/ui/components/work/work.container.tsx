@@ -70,7 +70,8 @@ const works = [
 
 export default function WorkContainer() {
   return (
-    <Container className="rounded mx-4">
+    <div className="">
+      <Container className="rounded mx-4">
       {/* Titre de la section */}
       <TitreSection className="w-[100px] m-auto text-center">Projets</TitreSection>
 
@@ -106,5 +107,6 @@ export default function WorkContainer() {
         </div>
       ))}
     </Container>
+    </div>
   );
 }

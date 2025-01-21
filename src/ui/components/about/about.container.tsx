@@ -8,7 +8,8 @@ import TitreSection from "@/ui/design-system/titreSection";
 
 export default function AboutContainer() {
   return (
-    <Container className=" bg-gray-100 dark:bg-gray-600 text-center">
+    <div className="bg-gray-100 dark:bg-gray-600">
+      <Container className="  text-center">
       <TitreSection className="w-[200px] m-auto">A propos De Moi</TitreSection>
       <div className="flex flex-col md:flex-row ">
         <HeroImage
@@ -20,5 +21,6 @@ export default function AboutContainer() {
         <AboutElement />
       </div>
     </Container>
+    </div>
   );
 }
