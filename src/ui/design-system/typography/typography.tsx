@@ -36,7 +36,7 @@ export default function Typography({
       colorStyle = "text-gray dark:text-white";
       break;
     case "gray":
-      colorStyle = "text-gray-700";
+      colorStyle = "text-gray-700 dark:text-white";
       break;
 
     case "white":
@@ -48,7 +48,7 @@ export default function Typography({
       break;
 
     case "secondary":
-      colorStyle = "text-secondary";
+      colorStyle = "text-gray-400";
       break;
 
     default:

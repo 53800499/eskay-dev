@@ -5,16 +5,19 @@ import Container from "../container/container";
 import Typography from "@/ui/design-system/typography/typography";
 import {
   RiCopyrightFill,
+  RiFacebookBoxFill,
   RiGithubFill,
   RiLinkedinFill,
   RiMailAiFill,
   RiPhoneFill,
-  RiTwitterFill
 } from "react-icons/ri";
 import TitreSection from "@/ui/design-system/titreSection";
 import Button from "@/ui/design-system/button/button";
 
 export default function ContactContainer() {
+  const action = () => {
+    alert("Le site est en maintenance Contactez-moi par mes identifiant situé en bas");
+  }
   return (
     <Container
       className="text-center justify-center dark:bg-gray-600"
@@ -53,6 +56,7 @@ export default function ContactContainer() {
           iconTheme="accent"
           className="rounded p-2"
           aria-label="Visitez mes projets sur Github"
+          baseUrl="https://github.com/53800499"
         >
           <RiGithubFill />
         </Button>
@@ -62,6 +66,7 @@ export default function ContactContainer() {
           iconTheme="accent"
           className="rounded p-2"
           aria-label="En savoir plus sur LinkedIn"
+          action={action}
         >
           <RiLinkedinFill />
         </Button>
@@ -71,8 +76,9 @@ export default function ContactContainer() {
           iconTheme="accent"
           className="rounded p-2"
           aria-label="Suivez-moi sur Twitter"
+          action={action}
         >
-          <RiTwitterFill />
+          <RiFacebookBoxFill />
         </Button>
       </div>
     </Container>

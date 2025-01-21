@@ -49,7 +49,7 @@ export default function Button({
 
   switch (variant) {
     case "accent":
-      variantStyles = "bg-gray-900 text-white hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:active:bg-gray-500";
+      variantStyles = "bg-gray-900 text-white hover:bg-gray-700 active:bg-gray-800 dark:bg-gray-900 dark:hover:bg-gray-600 dark:active:bg-gray-500";
       break;
     case "suivant":
       variantStyles = "bg-primary-1 hover:text-white hover:bg-primary text-gray";
@@ -68,7 +68,7 @@ export default function Button({
     case "ico":
       if (iconTheme === "accent") {
         variantStyles =
-          " hover:bg-gray-200 text-gray-900 dark:text-white dark:bg-gray-800 dark:hover:bg-gray-700";
+          "bg-gray-200 hover:bg-gray-300 text-gray-900 dark:text-white dark:bg-gray-500 dark:hover:bg-gray-700";
       }
       if (iconTheme === "secondary") {
         variantStyles =

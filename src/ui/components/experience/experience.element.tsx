@@ -15,7 +15,7 @@ export default function ExperienceElement({ nom, titre, option, date }: Props) {
     <div className="flex flex-col md:flex-row p-5 md:p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg gap-4 rounded md:w-[896px]">
       {/* Nom de l'entreprise/institution */}
       <Typography
-        variant="h3"
+        variant="h3" theme="primary"
         className="text-primary-500 font-bold md:w-1/4 text-start"
         aria-label={`Nom de l'expérience : ${nom}`}
       >
@@ -27,14 +27,14 @@ export default function ExperienceElement({ nom, titre, option, date }: Props) {
         <div className="flex justify-between items-center">
           {/* Titre et date */}
           <Typography
-            variant="subTitle" weight="medium"
+            variant="subTitle"
             className="font-bold text-gray-800 dark:text-gray-200"
           >
             {titre}
           </Typography>
           <Typography
-            variant="body2"
-            className="text-gray-400 dark:text-gray-400"
+            variant="body2" theme="secondary"
+            className=" dark:text-gray-400"
             aria-label={`Date : ${date}`}
           >
             {date}

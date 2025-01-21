@@ -28,7 +28,7 @@ export default function TestimonialsElements({
 
       <div className="text-center">
         <Typography variant="subTitle" className="font-semibold">{nom}</Typography>
-        <Typography variant="body3" className="text-sm text-gray-500">{reseaux}</Typography>
+        <Typography variant="body3" theme="secondary" className="text-sm text-gray-500">{reseaux}</Typography>
       </div>
     </div>
   );

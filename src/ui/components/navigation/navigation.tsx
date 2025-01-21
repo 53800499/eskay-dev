@@ -17,9 +17,13 @@ export default function Navigation() {
 
   // Fonction pour gérer l'ouverture/fermeture du menu mobile
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-
+  const action = () => {
+    alert(
+      "Le site est en maintenance Contactez-moi par mes identifiant situé en bas"
+    );
+  };
   return (
-    <nav className="shadow-md">
+    <nav className="shadow sticky top-0 z-50 bg-white dark:bg-gray-700">
       <Container className="flex items-center justify-between py-2">
         {/* Logo */}
         <Link
@@ -48,26 +52,31 @@ export default function Navigation() {
             <ActiveLink href="#contact">Contact</ActiveLink>
           </Typography>
         </div>
-          <div className="flex items-center  hidden lg:flex gap-3">
-            {/* Bouton Mode Sombre */}
-            <Button
-              variant="ico"
-              size="small"
-              iconTheme="accent"
-              className="rounded p-2"
-              action={toggleDarkMode}
-              aria-label={
-                darkMode ? "Activer le mode clair" : "Activer le mode sombre"
-              }
-            >
-              {darkMode ? <RiSunFill /> : <RiMoonFill />}
-            </Button>
+        <div className="flex items-center  hidden lg:flex gap-3">
+          {/* Bouton Mode Sombre */}
+          <Button
+            variant="ico"
+            size="small"
+            iconTheme="accent"
+            className="rounded p-2"
+            action={toggleDarkMode}
+            aria-label={
+              darkMode ? "Activer le mode clair" : "Activer le mode sombre"
+            }
+          >
+            {darkMode ? <RiSunFill /> : <RiMoonFill />}
+          </Button>
 
-            {/* Bouton Télécharger CV */}
-            <Button variant="accent" size="small" className="rounded">
-              Télécharger CV
-            </Button>
-          </div>
+          {/* Bouton Télécharger CV */}
+          <Button
+            variant="accent"
+            size="small"
+            className="rounded"
+            action={action}
+          >
+            Télécharger CV
+          </Button>
+        </div>
         {/* Actions (boutons et menu mobile) */}
         <div className="flex items-center gap-3">
           {/* Bouton Menu Mobile */}
