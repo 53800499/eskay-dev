@@ -38,7 +38,7 @@ export default function TestimonialsContainer() {
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-600">
+    <div className="bg-gray-100 dark:bg-gray-600" id="testimonials">
       <Container
         className="text-center bg-gray-100 dark:bg-gray-600"
         idElement="skills"

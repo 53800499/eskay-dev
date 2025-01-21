@@ -60,7 +60,7 @@ export default function ExperienceContainer() {
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-600">
+    <div className="bg-gray-100 dark:bg-gray-600" id="experience">
       <Container className="text-center " idElement="skills">
       {/* Titre de la section */}
       <TitreSection className="w-[150px] m-auto text-center">Expérience</TitreSection>
