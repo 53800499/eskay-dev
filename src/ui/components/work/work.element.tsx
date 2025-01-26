@@ -7,6 +7,7 @@ import React from "react";
 import { RiCodeView } from "react-icons/ri";
 
 interface Props {
+  url?: string;
   src: string;
   alt: string;
   titre: string;
@@ -17,6 +18,7 @@ interface Props {
 export default function WorkElement({
   src,
   alt,
+  url,
   titre,
   description,
   technologies
@@ -67,7 +69,7 @@ export default function WorkElement({
 
         {/* Button */}
         <div className="flex justify-end mt-4">
-          <Button variant="ico" aria-label="Voir le code" className="flex items-center">
+          <Button variant="ico" aria-label="Voir le code" baseUrl={url} className="flex items-center">
             <RiCodeView />
           </Button>
         </div>

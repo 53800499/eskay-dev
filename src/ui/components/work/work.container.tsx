@@ -64,7 +64,8 @@ const works = [
     alt: "Site Vitrine",
     titre: "Site Vitrine",
     description: "Un site vitrine conçu pour une entreprise, présentant ses services et produits de manière attrayante et professionnelle. Ce projet a été réalisé avec HTML, CSS, JavaScript, PHP et Bootstrap, assurant une présentation claire, une navigation fluide et une compatibilité mobile optimale. Il permet à l'entreprise de mettre en valeur son image de marque et d'attirer de nouveaux clients grâce à une interface élégante et responsive.",
-    technologies: ["html", "css", "javaScript", "php", "Bootstrap"]
+    technologies: ["html", "css", "javaScript", "php", "Bootstrap"],
+    url:"https://artboart.vercel.app"
   }
 ];
 
@@ -85,6 +86,7 @@ export default function WorkContainer() {
           <WorkElement
             src={work.src}
             alt={work.alt}
+            url={work.url}
             titre={work.titre}
             description={work.description}
             technologies={

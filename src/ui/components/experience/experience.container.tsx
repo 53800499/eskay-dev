@@ -19,7 +19,7 @@ export default function ExperienceContainer() {
         "Collaboration avec des équipes pluridisciplinaires.",
         "Utilisation de technologies modernes telles que React et Node.js.",
       ],
-      date: "Janv 2024 - Présent"
+      date: "oct 2024 - Présent"
     },
     {
       id: 2,
@@ -31,10 +31,22 @@ export default function ExperienceContainer() {
         "Optimisation des performances des applications existantes.",
         "Déploiement et maintenance des sites web.",
       ],
-      date: "Juin 2023 - Déc 2023"
+      date: "Juin 2023 - Présent"
     },
     {
       id: 3,
+      nom: "UpWork",
+      titre: "Développeur Full Stack",
+      option: [
+        "Réalisation de projets web pour divers clients.",
+        "Création de designs interactifs et responsives.",
+        "Optimisation des performances des applications existantes.",
+        "Déploiement et maintenance des sites web.",
+      ],
+      date: "Juin 2023 - Présent"
+    },
+    {
+      id: 4,
       nom: "IwajuTech",
       titre: "Stagiaire Développeur",
       option: [
@@ -46,7 +58,7 @@ export default function ExperienceContainer() {
       date: "Sep 2024 - Dec 2024"
     },
     {
-      id: 4,
+      id: 5,
       nom: "H-LAB",
       titre: "Stagiaire Développeur Web",
       option: [
