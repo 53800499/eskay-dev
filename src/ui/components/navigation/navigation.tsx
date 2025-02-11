@@ -78,11 +78,11 @@ export default function Navigation() {
           </Button>
         </div>
         {/* Actions (boutons et menu mobile) */}
-        <div className="flex items-center gap-3">
+        <div className="lg:hidden flex items-center gap-3">
           {/* Bouton Menu Mobile */}
           <button
             onClick={toggleMobileMenu}
-            className="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
+            className="p-2 rounded-md text-gray-600 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none"
             aria-label="Basculer le menu mobile"
           >
             {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -92,7 +92,7 @@ export default function Navigation() {
 
       {/* Menu Mobile */}
       <div
-        className={`lg:hidden bg-white dark:bg-gray-900 transition-max-height duration-300 overflow-hidden ${
+        className={`lg:hidden bg-white dark:bg-gray-800 transition-max-height duration-300 overflow-hidden ${
           isMobileMenuOpen ? "max-h-screen" : "max-h-0"
         }`}
       >
@@ -145,7 +145,12 @@ export default function Navigation() {
           </Typography>
 
           {/* Bouton Télécharger CV */}
-          <Button variant="accent" size="small" className="rounded">
+          <Button
+            variant="accent"
+            action={action}
+            size="small"
+            className="rounded"
+          >
             Télécharger CV
           </Button>
         </div>
