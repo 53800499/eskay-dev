@@ -12,7 +12,7 @@ interface SkillsImageProps {
 
 export default function SkillsImage({ src, alt, children }: SkillsImageProps) {
   return (
-    <div className="flex items-center gap-6 flex-wrap md:flex-nowrap">
+    <div className="flex flex-wrap items-center gap-6 md:flex-nowrap">
       {/* Conteneur de l'image */}
       <div className="relative w-[78px] h-[96px] md:w-[108px] md:h-[120px] flex-shrink-0">
         <Image
@@ -22,13 +22,13 @@ export default function SkillsImage({ src, alt, children }: SkillsImageProps) {
           width={108}
           height={120}
           objectFit="cover"
-          className="rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          className="transition-transform duration-300 rounded-lg shadow-lg hover:scale-105"
         />
       </div>
 
       {/* Texte associé à l'image */}
       <Typography
-        className="text-sm md:text-base lg:text-lg font-medium text-gray-800 dark:text-gray-200 leading-snug"
+        className="text-sm font-medium leading-snug text-gray-800 md:text-base lg:text-lg dark:text-gray-200"
         aria-label={typeof children === "string" ? children : undefined}
       >
         {children}
