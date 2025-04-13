@@ -30,7 +30,7 @@ export default function ContactContainer() {
       className=""
     >
       <Container
-        className="text-center justify-center"
+        className="justify-center text-center"
         idElement="contact"
       >
         <motion.div variants={textVariant(0.1)}>
@@ -88,7 +88,7 @@ export default function ContactContainer() {
         <motion.div variants={textVariant(0.5)}>
           <Typography
             variant="body2"
-            className="mt-4 mb-8 text-gray-600 text-center"
+            className="mt-4 mb-8 text-center text-gray-600"
           >
             Vous pouvez également me retrouver sur ces plateformes !
           </Typography>
@@ -96,14 +96,14 @@ export default function ContactContainer() {
 
         <motion.div
           variants={fadeIn('up', 0.6)}
-          className="flex gap-4 mt-8 justify-center"
+          className="flex justify-center gap-4 mt-8"
         >
           <motion.div whileHover={floatIn(0, 0.5)}>
             <Button
               variant="ico"
               size="small"
               iconTheme="accent"
-              className="rounded p-2"
+              className="p-2 rounded"
               aria-label="Visitez mes projets sur Github"
               baseUrl="https://github.com/53800499"
             >
@@ -118,7 +118,7 @@ export default function ContactContainer() {
               variant="ico"
               size="small"
               iconTheme="accent"
-              className="rounded p-2"
+              className="p-2 rounded"
               aria-label="En savoir plus sur LinkedIn"
               action={action}
             >
@@ -133,7 +133,7 @@ export default function ContactContainer() {
               variant="ico"
               size="small"
               iconTheme="accent"
-              className="rounded p-2"
+              className="p-2 rounded"
               aria-label="Suivez-moi sur Twitter"
               action={action}
             >
